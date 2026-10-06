@@ -1,0 +1,36 @@
+{
+    "name": "uccello/linear-connector",
+    "description": "Linear connector for Uccello Hub.",
+    "license": "MIT",
+    "type": "library",
+    "version": "0.1.0",
+    "require": {
+        "php": "^8.3",
+        "uccello/core": "*",
+        "uccello/hub": "*",
+        "laravel/framework": "^13.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Uccello\\LinearConnector\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Uccello\\LinearConnector\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "uccello/testing": "*"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Uccello\\LinearConnector\\LinearConnectorServiceProvider"
+            ]
+        },
+        "uccello": {
+            "namespace": "linear-connector"
+        }
+    }
+}
